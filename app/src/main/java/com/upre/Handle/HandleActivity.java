@@ -81,12 +81,16 @@ public class HandleActivity extends AppCompatActivity {
             return false;
         });
 
+        //右摇杆回调函数，参数x，y分别表示摇杆当前占总体的比例，范围为正负1，0表示原点
         rockerViewRight.setCallBack(new RockerView.CallBack() {
+
+            //摇杆按下事件
             @Override
             public void onDown(float x, float y) {
 
             }
 
+            //摇杆移动事件
             @Override
             public void onMove(float x, float y) {
                 try{
@@ -95,6 +99,7 @@ public class HandleActivity extends AppCompatActivity {
                 }catch (IOException e){}
             }
 
+            //摇杆抬起事件
             @Override
             public void onUp(float x, float y) {
                 try{
@@ -103,12 +108,17 @@ public class HandleActivity extends AppCompatActivity {
                 }catch (IOException e){}
             }
         });
+
+        //左摇杆回调函数，参数x，y分别表示摇杆当前占总体的比例，范围为正负1，0表示原点
         rockerViewLeft.setCallBack(new RockerView.CallBack() {
+
+            //摇杆按下事件
             @Override
             public void onDown(float x, float y) {
 
             }
 
+            //摇杆移动事件
             @Override
             public void onMove(float x, float y) {
                 try{
@@ -116,6 +126,7 @@ public class HandleActivity extends AppCompatActivity {
                 }catch (IOException e){}
             }
 
+            //摇杆抬起事件
             @Override
             public void onUp(float x, float y) {
                 try{
