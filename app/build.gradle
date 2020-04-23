@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 29
     defaultConfig {
-        applicationId "com.upre.controller"
+        applicationId 'com.upre.handle'
         minSdkVersion 23
         targetSdkVersion 29
         versionCode 1
@@ -22,12 +22,12 @@ android {
     }
     productFlavors {
     }
-    buildToolsVersion '29.0.2'
+    buildToolsVersion '29.0.3'
 }
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
 }
