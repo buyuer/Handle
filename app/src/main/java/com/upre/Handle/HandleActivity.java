@@ -94,8 +94,8 @@ public class HandleActivity extends AppCompatActivity {
             @Override
             public void onMove(float x, float y) {
                 try{
-                    out.write((byte) ( x>=0 ? x*32+223 : (1-Math.abs(x))*32+191) );
-                    out.write((byte) ( y>=0 ? (1-y)*32+126 : Math.abs(y)*32+158) );
+                    out.write((byte)( x>=0 ? x*25+178 : 178-Math.abs(x)*25) );
+                    out.write((byte)( y>=0 ? y*25+127 : 127-Math.abs(y)*25) );
                 }catch (IOException e){}
             }
 
@@ -103,8 +103,8 @@ public class HandleActivity extends AppCompatActivity {
             @Override
             public void onUp(float x, float y) {
                 try{
-                    out.write(158);
-                    out.write(223);
+                    out.write(127);
+                    out.write(178);
                 }catch (IOException e){}
             }
         });
@@ -122,7 +122,8 @@ public class HandleActivity extends AppCompatActivity {
             @Override
             public void onMove(float x, float y) {
                 try{
-                    out.write((byte)( x>=0 ? x*32+93 : (1-Math.abs(x))*32+61));
+                    out.write((byte)( x>=0 ? x*25+76 : 76-Math.abs(x)*25) );
+                    out.write((byte)( y>=0 ? y*25+25 : 25-Math.abs(y)*25) );
                 }catch (IOException e){}
             }
 
@@ -130,7 +131,8 @@ public class HandleActivity extends AppCompatActivity {
             @Override
             public void onUp(float x, float y) {
                 try{
-                    out.write(93);
+                    out.write(25);
+                    out.write(26);
                 }catch (IOException e){}
             }
         });
@@ -172,9 +174,9 @@ public class HandleActivity extends AppCompatActivity {
 
     public void buttonClicked(View v){
         String temp = String.valueOf(((Button)v).getText());
-        String numHex = temp.substring(temp.indexOf('x') + 1);
+        int data = Integer.valueOf(temp);
         try{
-            out.write(Byte.valueOf(numHex));
+            out.write(data);
         }catch (IOException e){}
     }
 }

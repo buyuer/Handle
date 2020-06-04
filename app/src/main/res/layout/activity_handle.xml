@@ -62,7 +62,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="buttonClicked"
-                android:text="0x01"
+                android:text="255"
                 tools:ignore="ButtonStyle" />
 
             <Button
@@ -70,7 +70,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="buttonClicked"
-                android:text="0x02"
+                android:text="254"
                 tools:ignore="ButtonStyle" />
 
             <Button
@@ -78,7 +78,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="buttonClicked"
-                android:text="0x03"
+                android:text="253"
                 tools:ignore="ButtonStyle" />
         </TableRow>
 
@@ -91,7 +91,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="buttonClicked"
-                android:text="0x04"
+                android:text="252"
                 tools:ignore="ButtonStyle" />
 
             <Button
@@ -99,7 +99,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="buttonClicked"
-                android:text="0x05"
+                android:text="251"
                 tools:ignore="ButtonStyle" />
 
             <Button
@@ -107,7 +107,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="buttonClicked"
-                android:text="0x06"
+                android:text="250"
                 tools:ignore="ButtonStyle" />
         </TableRow>
 
@@ -120,7 +120,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="buttonClicked"
-                android:text="0x07"
+                android:text="249"
                 tools:ignore="ButtonStyle" />
 
             <Button
@@ -128,7 +128,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="buttonClicked"
-                android:text="0x08"
+                android:text="248"
                 tools:ignore="ButtonStyle" />
 
             <Button
@@ -136,7 +136,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="buttonClicked"
-                android:text="0x09"
+                android:text="247"
                 tools:ignore="ButtonStyle" />
         </TableRow>
 
@@ -148,21 +148,21 @@
                 android:id="@+id/button18"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="预留"
+                android:text="246"
                 tools:ignore="ButtonStyle" />
 
             <Button
                 android:id="@+id/button17"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="预留"
+                android:text="245"
                 tools:ignore="ButtonStyle" />
 
             <Button
                 android:id="@+id/button16"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="预留"
+                android:text="244"
                 tools:ignore="ButtonStyle" />
 
         </TableRow>
